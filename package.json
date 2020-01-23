@@ -1,0 +1,26 @@
+{
+  "name": "trier-systeme",
+  "version": "1.0.0",
+  "description": "## Preámbulo Este proyecto es realizado durante un open house  de laboratoria, sede Guadalajara. El equipo esta conformado por 2 personas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LabSilvana/Trier-Systeme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LabSilvana/Trier-Systeme/issues"
+  },
+  "homepage": "https://github.com/LabSilvana/Trier-Systeme#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9",
+    "nodemon": "^2.0.2"
+  }
+}
