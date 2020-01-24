@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 const usersRoutes = require('./routes/users');
+const drugsRoutes = require('./routes/drugs')
 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb+srv://trier-systeme:1qa2ws3ed@cluster0-lyx8g.mongodb.net/test?retryWrites=true&w=majority', {
@@ -18,6 +19,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.json());
 
 app.use('/users', usersRoutes);
+app.use('/drugs', drugsRoutes)
 
 
 app.listen(app.get('port'), () => {
